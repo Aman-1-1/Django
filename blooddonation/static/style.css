@@ -1,0 +1,52 @@
+@keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.1); }
+            }
+        .heartbeat {
+            display: inline-block;
+            animation: heartbeat 1.2s infinite;
+        }
+@keyframes pulse {
+    0% { background-color: #fef2f2; }
+    50% { background-color: #fee2e2; }
+    100% { background-color: #fef2f2; }
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.hero-gradient {
+    background: linear-gradient(135deg, #fef7f7 0%, #f8e8e8 100%);
+}
+.donate-btn {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(220, 38, 38, 0.2);
+}
+.donate-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(220, 38, 38, 0.3);
+}
+.stat-card {
+    transition: transform 0.3s ease;
+}
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+.news-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.breaking-news {
+    animation: pulse 2s infinite;
+}
+
+.category-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
