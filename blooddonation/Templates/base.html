@@ -26,12 +26,12 @@
                     </div>
                     <span class="text-xl font-bold text-red-600">BloodBridge</span>
                 </div>
-
+                 
                 {% if request.session.user_id %}
                 <nav class="hidden md:flex space-x-8">
                     <a href="#" class="text-gray-700 hover:text-red-600 font-medium transition-colors">Home</a>
                     <a href="#" class="text-gray-700 hover:text-red-600 font-medium transition-colors">News</a>
-                    <a href="#" class="text-gray-700 hover:text-red-600 font-medium transition-colors">Find Donors</a>
+                    <a href="{% url 'finddoner' %}" class="text-gray-700 hover:text-red-600 font-medium transition-colors">Find Donors</a>
                     <a href="#" class="text-gray-700 hover:text-red-600 font-medium transition-colors">About Us</a>
                 </nav>
                 {% endif %}
