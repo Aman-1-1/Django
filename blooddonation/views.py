@@ -22,9 +22,9 @@ def signupdoner_view (request):
         blood_type = request.POST.get("blood_type")
         is_donor = True if request.POST.get("is_donor") == "on" else False
         
-        if len(username)<=8 or len(username)>=16:
-            messages.error(request, "username Should be between 8 to 16 character long")
-            return render(request, "signup.html")
+        # if len(username)<=8 or len(username)>=16:
+        #     messages.error(request, "username Should be between 8 to 16 character long")
+        #     return render(request, "signup.html")
         
         if password1 != password2:
             messages.error(request, "Passwords do not match!")
